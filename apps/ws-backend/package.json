@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node init && tsc -b",
+    "dev": "node init &&  node ./dist/index.js",
+    "start": "node init && npm run build && npm run start"
   },
-  
   "dependencies": {
-    "@repo/typescript-config":"workspace:*"
+    "@repo/typescript-config": "workspace:*",
+    "@types/express": "^5.0.6",
+    "@types/ws": "^8.18.1",
+    "express": "^5.2.1",
+    "ws": "^8.18.3"
   },
   "keywords": [],
   "author": "",
