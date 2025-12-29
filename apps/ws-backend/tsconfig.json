@@ -1,0 +1,10 @@
+{
+    "extends":"@repo/typescript-config/base.json"
+}
+
+
+//   "dependencies": {
+//     "@repo/typescript-config":"workspace:*"
+//   },
+//in package.json
+//this means you should pickup dependencies from same package rather than npm
